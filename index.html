@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/brinx-title.png">
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</head>
+
+
+<body onload="start()">
+    <div>
+        <img onclick="nextImage()" class="right-arrow" src="icon/right.png" id="arrow">
+
+    </div>
+
+    <div class="header-box" id="header-box">
+        <div class="header">
+            <div class="logo-box">
+                <img src="icon/brinx-icon.png" alt="">
+                <div>
+                    <h1>Brinx</h1>
+                </div>
+            </div>
+            <h3 class="news">Jetzt ohne Mindestbestellwert!
+            </h3>
+            <div class="header-icons">
+                <img src="icon/basket-white.png" onclick="showBasket()">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="basket-box" id="basket-box">
+        <div class="basket-title">
+            <div class="basket-logo">
+                <img src="icon/brinx-icon.png">
+                <p>Brinx</p>
+            </div>
+            <h2>Warenkorb</h2>
+            <img src="icon/basket-white.png">
+        </div>
+        <div class="basket-content" id="basket-content">
+            <div class="dish-box" id="dish-box">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="restaurant-box" id="restaurant-box">
+        <div class="restaurant-image">
+            <img class="r0" src="img/r5.jpg" id="r0">
+            <img class="r1" src="img/r0.jpg" id="r1">
+            <img class="r2" src="img/r1.jpg" id="r2">
+            <img class="r3" src="img/r2.jpg" id="r3">
+            <img class="r4" src="img/r3.jpg" id="r4">
+            <img class="r5" src="img/r4.jpg" id="r5">
+        </div>
+
+        <div class="slide-container" id="slide-container">
+            <div class="slide-box">
+                <div class="r0 slide-texts" id="c0">
+                    <div class="restaurant-headline" id="headline-content0">
+                    </div>
+                    <div class="restaurant-content" id="content0">
+                    </div>
+                </div>
+                <div class="r1 slide-texts" id="c1">
+                    <div class="restaurant-headline" id="headline-content1">
+                    </div>
+                    <div class="restaurant-content" id="content1">
+                    </div>
+                </div>
+                <div class="r2 slide-texts" id="c2">
+                    <div class="restaurant-headline" id="headline-content2">
+                    </div>
+                    <div class="restaurant-content" id="content2">
+                    </div>
+                </div>
+                <div class="r3 slide-texts" id="c3">
+                    <div class="restaurant-headline" id="headline-content3">
+                    </div>
+                    <div class="restaurant-content" id="content3">
+                    </div>
+                </div>
+                <div class="r4 slide-texts" id="c4">
+                    <div class="restaurant-headline" id="headline-content4">
+                    </div>
+                    <div class="restaurant-content" id="content4">
+                    </div>
+                </div>
+                <div class="r5 slide-texts" id="c5">
+                    <div class="restaurant-headline" id="headline-content5">
+                    </div>
+                    <div class="restaurant-content" id="content5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

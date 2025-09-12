@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+    <script>
+        let tes = [{"amount": 1, "price": 3}, {"amount": 5, "price": 10}, {"amount": 10, "price": 1}];
+        let total = 0;
+
+        function test(){
+            for (let i = 0; i < tes.length; i++) {
+                total = total + (tes[i]['amount'] * tes[i]['price']);
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    
+
+    <button onclick="test()">test</button>
+
+</body>
+</html>

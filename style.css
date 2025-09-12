@@ -1,0 +1,468 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: raleway;  
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: raleway;
+    src: url(fonts/raleway-v28-latin-regular.woff2);
+}
+@font-face {
+    font-family: raleway-bold;
+    src: url(fonts/raleway-v28-latin-500.woff2);
+}
+.bold{
+    font-family: raleway-bold;
+}
+
+/* ########################### header #####################################*/
+.header-box{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgb(3, 195, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo-box img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-icons img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ######################################## basket ################################*/
+
+.basket-box{
+    position: fixed;
+    height: 100vh;
+    width: 35vw;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-top: 0px;
+    background-color: white;
+    z-index: 30;
+    border-left: 1px solid rgb(149, 232, 255);  
+    transform: translateX(35vw);  
+    transition: transform 375ms ease-in-out;
+}
+.basket-box-shown{
+    transform: translateX(0);
+}
+
+.basket-title{
+    text-align: center;
+    border-bottom: 1px solid rgb(149, 232, 255);
+
+}
+.basket-title p{
+    display: none;
+}
+
+.basket-title img{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+.basket-dish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dish-box{
+    display: flex;
+    flex-direction: column;
+    height: 44vh;
+    overflow: auto;
+}
+.basket-icons img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid rgb(149, 232, 255);
+    border-radius: 5px;
+}
+.basket-description{
+    margin: 10px;
+    padding: 5px;
+    width: 50%;
+}
+.empty-basket{
+    color: rgb(48, 210, 255);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 200px;
+}
+.basket-all{
+    border-top: 1px solid rgb(149, 232, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.all-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sum{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.sum-all{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: raleway-bold;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 5px solid rgb(149, 232, 255);
+
+}
+.sum-all p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.order-cost{
+    color: rgb(161, 158, 158);
+}
+.order-button{
+    width: 220px;
+    height: 40px;
+    color: white;
+    background-color: rgb(3, 195, 249);
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.order-button img{
+    width: 40px;
+    height: 40px;
+}
+.order-icon{
+    position: absolute;
+    transform: translateX(-230%);
+    transition: transform 950ms ease-in;
+}
+
+
+/* #################################### dishes #############################*/
+
+.right-arrow{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 20;
+    height: 160px;
+    width: 80px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+    filter: brightness(0.1);
+
+}
+.right-arrow-shown{
+    transition: all 225ms ease-in-out;
+    left: 56%;
+}
+.right-arrow:hover{
+    opacity: 1;
+}
+.right-arrow-basket-closed{
+    transition: all 225ms ease-in-out;
+    right: 56%;
+}
+.right-arrow img{
+    width: 100%;
+    object-fit: cover;
+}
+.r0,  .r1, .r2, .r3, .r4, .r5{
+    transition: transform 375ms ease-in-out;
+    position: absolute;
+}
+.r0{
+    transform: translateX(-100%);
+}
+.r2, .r3, .r4, .r5{
+    transform: translateX(100%);
+}
+
+.restaurant-box{
+    width: 100vw;
+    margin-top: 70px;
+}
+
+.restaurant-box h1{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 4%;
+    font-family: raleway-bold;
+}
+
+.heart-plane{
+    margin-left: 35px;
+}
+.heart-plane img{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border: 1px solid rgb(149, 232, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.restaurant-image{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.restaurant-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.slide-box{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+.slide-container{
+    width: 100vw;
+
+}
+.slide-container-shown{
+    transition: all 375ms ease-in-out;
+    width: 65vw;
+}
+.slide-texts{
+    width: 100%;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    margin-bottom: 10px;
+}
+.stars img{
+    width: 20px;
+    height: 20px;
+}
+.restaurant-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dish{
+    width: 90%;
+    border: 1px solid rgb(149, 232, 255);
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+.dish img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid rgb(149, 232, 255);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.dish:hover{
+    background-color: rgba(188, 238, 255, 0.5);
+
+}
+.dish-and-price{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.dish-title{
+    font-size: 22px;
+    font-family: raleway-bold;
+}
+.dish-price{
+    color: rgb(48, 210, 255);
+    font-size: 22px;
+    width: 140px;
+    text-align: end;
+}
+.add-dish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* #################### for mobiles #################################### */
+@media (max-width: 1000px){
+    .news{
+        display: none;
+    }
+    .icons-unimp{
+        display: none;
+    }
+    .right-arrow-shown{
+        left: 52%;
+    }
+}
+@media (max-width: 850px){
+   
+    .basket-box{
+        transform: translateX(101vw);
+        width: 100vw;
+        bottom: 0;
+        top: unset;
+        height: 8vh;
+    }
+
+    .basket-box:hover{
+        height: 70vh;
+    }
+    .dish-box{
+        max-height: 35vh;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .basket-title img{
+        display: unset;
+    }   
+   
+    .basket-title{
+        background-color: rgb(3, 195, 249);
+        padding-left: 60px;
+        padding-right: 60px;
+        min-height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }  
+    .basket-title p{
+        display: unset;
+        color: white;
+        padding-left: 5px;
+    }
+    .basket-logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-box-shown{
+        display: none;
+    }  
+    .margin-shown{
+        margin-top: 0px;
+    }
+    h2{
+        display: none;
+        height: 70px;
+    }    
+    .slide-container-shown{
+        width: 100vw;
+    }
+    .right-arrow{
+        left: 80%;
+    }
+    .right-arrow-shown{
+        left: 80%;
+        top: 10%;
+    }
+    .sum-all{
+        margin-top: 3px;
+    }
+    .order-button{
+        margin-top: 3px;
+        height: 35px;
+        width: 160px;
+    }
+    .order-button img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .heart-plane{
+        display: none;
+    }
+    .dish-price, .dish-description{
+        font-size: 16px;
+    }
+    .dish{
+        width: 86%;
+    }
+    .dish-and-price{
+        width: 80%;
+    }
+}
+@media (max-width: 430px){
+    .dish-price, .dish-description{
+        font-size: 14px;
+    }
+    .dish-title{
+        font-size: 19px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .dish-description{
+        width: 55%;
+    }
+    .right-arrow{
+        left: 75%;
+    }
+}   
