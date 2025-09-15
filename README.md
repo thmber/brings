@@ -14,16 +14,6 @@
 ![CSS](img/css.png)
 ![Html](img/html.png)
 
-## :seedling: Getting Started
-
-To run locally:
-
-```bash
-git clone https://github.com/thmber/portfolio.git
-cd portfolio
-npm install
-ng serve
-```
 
 Open [http://localhost:4200](http://localhost:4200) in your browser.
 
