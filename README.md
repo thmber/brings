@@ -14,7 +14,4 @@
 ![CSS](img/css.png)
 ![Html](img/html.png)
 
-
-Open [http://localhost:4200](http://localhost:4200) in your browser.
-
 ---
